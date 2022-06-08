@@ -20,7 +20,7 @@ function cal() {
     nominal = start - deduct;
   }
   
-  real = nominal * 2 / 3 - remand;
+  real = nominal * 2 / 3;
   remain = real - remand;
   
   if (start <= deduct) {
@@ -38,7 +38,7 @@ function cal() {
 	remain = 1;
   }
   
-  return nominal, real, remain;	
+  return [nominal, real, remain];	
 }
 
 nominal = cal()[0];
