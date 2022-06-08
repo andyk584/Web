@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sentence Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<h1>Sentence Calculator</h1>
+
+<p>Introduction</p>
+
+
+<form>
+  <div>
+    <label for="start">Expected Starting Point:</label>
+    <input type="number" id="start" name="start" min="1" value="0"> 
+  </div>
+  
+  <div>
+    <label for="NSLmin">Expected Minimum Sentence: (for NSL only)</label>
+	  <select id="NSLmin" name="NSLmin">
+	    <option value="0">N/A</option>
+	    <option value="3">3 years</option>
+  	    <option value="5">5 years</option>
+	    <option value="10">10 years</option>
+	  </select>
+  </div>	
+  
+  <div>
+    <label for="remand">Remanded Months: </label>
+    <input type="number" id="remand" name="remand" min="0" value="0">
+  </div>
+  
+  <div>
+    <label for="rem_date">Remanded since: </label>
+    <input type="date" id="rem_date" name="rem_date">
+  </div>
+  
+  <div>
+    <label for="deduct">Expected Deduction: </label>
+    <input type="number" id="deduct" name="deduct" min="0" value="0">
+  </div>
+  
+  <div>
+    <input type="radio" id="PG" name="plea" value="PG">
+    <label for="PG">Plead Guilty</label>
+    <input type="radio" id="PNG" name="plea" value="PNG">
+    <label for="PNG">Plead NOT Guilty</label>
+  </div>
+</form>
+<br>
+<button type="button" id="btn" onclick="cal()">Calculate!</button>
+
+<div>
+  <p id="nominal">Norm</p>
+  <p id="real">Real</p>
+  <p id="remain">Remain</p>
+</div>
+
+Creator:
+<a href="https://www.instagram.com/hkerganggang/" target="_blank">@hkerganggang</a> 
+
+<script src="script.js"></script>
+</body>
+</html>
